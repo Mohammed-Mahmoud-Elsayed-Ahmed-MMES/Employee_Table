@@ -1,0 +1,283 @@
+/* Start Global Rules */
+:root {
+    --c-active: #f51659;
+    --c-active-inner: #FFFFFF;
+    --c-default: #D2D6E9;
+    --c-default-dark: #C7CBDF;
+    --c-black: #1B1B22;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    opacity: 90%;
+    background-image: url(landing1.jpg);
+    background-size: cover;
+    font-family: 'Caveat', cursive;
+}
+
+span {
+    color: #2bd6b4;
+}
+
+/* End Global Rules */
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 10px;
+    }
+
+}
+
+/* Start Header */
+header {
+    /* position: absolute; */
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+nav {
+    display: flex;
+    margin: 27px auto 0;
+    text-align: center;
+    position: relative;
+    width: 590px;
+    height: 70px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+}
+
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all 005s ease 0s;
+    border-radius: 8px;
+}
+
+a:nth-child(1) {
+    width: 100px;
+}
+
+a:nth-child(2) {
+    width: 110px;
+}
+
+a:nth-child(3) {
+    width: 110px;
+}
+
+a:nth-child(4) {
+    width: 140px;
+}
+
+a:nth-child(5) {
+    width: 150px;
+}
+
+nav .start-home,
+a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+    background-color: #1abc9c;
+}
+
+nav .start-Chiefs,
+a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px;
+    background-color: #e74c3c;
+}
+
+nav .start-Profile,
+a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+    background-color: #3498db;
+}
+
+nav .start-About,
+a:nth-child(4):hover~.animation {
+    width: 160px;
+    left: 310px;
+    background-color: #9b59b6;
+}
+
+nav .start-contact,
+a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 470px;
+    background-color: #e67e22;
+}
+
+header nav .form {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin: 12px 8px 0 30px;
+    color: white;
+    border-left: 1px solid white;
+}
+
+header nav .form i {
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+/* End Header */
+/* Start Button */
+button {
+    /* float: right;
+    right: 185px; */
+    height: 35px;
+    margin: 182px 10px 0px 6px;
+    cursor: pointer;
+    appearance: none;
+    border-color: black;
+    position: relative;
+    color: black;
+    outline: none;
+    font-size: 17px;
+    line-height: 5px;
+    font-weight: 600;
+    width: 132px;
+    text-align: center;
+    border-radius: 7px;
+    padding: 12px 0;
+    background-color: #dadcf0;
+    background-image: url('https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871');
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 1.5s ease;
+}
+
+button:hover {
+    background-position: center;
+    color: white;
+    border: none;
+    background-color: #c0d4d8;
+    --duration: .45s;
+}
+
+button:nth-child(1) {
+    filter: hue-rotate(310deg);
+}
+
+@media (max-width: 767px) {
+    button {
+        margin-top: -15px;
+        margin-left: 210px;
+    }
+}
+
+/* Start Button */
+/* Start Table */
+table {
+    width: 70%;
+    height: 70%;
+    border: 1px solid #CCC;
+    border-spacing: 1px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px 0;
+    /* margin-left: 80px; */
+}
+
+@media (max-width: 767px) {
+    table {
+        margin: 0 130px 40px 100px;
+    }
+
+}
+
+table caption {
+    margin: 80px auto 50px;
+    font-size: xxx-large;
+    /* padding-top: 90px; */
+}
+
+table thead td {
+    background-color: #b8cac8;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    border-color: #b8cac8;
+}
+
+table th {
+    padding: 15px;
+    background-color: #EEE;
+    border: 1px solid #CCC;
+}
+
+/* .e {
+    height: 35px;
+    margin: 270px 10px 0px 0px;
+    cursor: pointer;
+    appearance: none;
+    border-color: black;
+    position: relative;
+    color: black;
+    outline: none;
+    font-size: 17px;
+    line-height: 5px;
+    font-weight: 600;
+    width: 132px;
+    text-align: center;
+    border-radius: 7px;
+    padding: 12px 0;
+    background-color: #86bdbb;
+    background-image: url('https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871');
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 1.5s ease;
+}
+
+.e:hover {
+    background-position: center;
+    color: white;
+    border: none;
+    background-color: #a17434;
+    --duration: .45s;
+}
+
+.e:nth-child(2) {
+    filter: hue-rotate(310deg);
+} */
+
+/* End Table */
